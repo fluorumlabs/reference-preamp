@@ -9,7 +9,7 @@
 <grid distance="0.5" unitdist="mm" unit="mm" style="dots" multiple="1" display="yes" altdistance="0.25" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -119,10 +119,14 @@
 </layers>
 <board>
 <plain>
-<wire x1="33" y1="2" x2="98.5" y2="2" width="0" layer="20"/>
-<wire x1="98.5" y1="2" x2="98.5" y2="37" width="0" layer="20"/>
-<wire x1="98.5" y1="37" x2="33" y2="37" width="0" layer="20"/>
-<wire x1="33" y1="37" x2="33" y2="2" width="0" layer="20"/>
+<wire x1="33" y1="35" x2="33" y2="4" width="0" layer="20"/>
+<wire x1="33" y1="4" x2="35" y2="2" width="0" layer="20" curve="90"/>
+<wire x1="35" y1="2" x2="96.5" y2="2" width="0" layer="20"/>
+<wire x1="96.5" y1="2" x2="98.5" y2="4" width="0" layer="20" curve="90"/>
+<wire x1="98.5" y1="4" x2="98.5" y2="35" width="0" layer="20"/>
+<wire x1="98.5" y1="35" x2="96.5" y2="37" width="0" layer="20" curve="90"/>
+<wire x1="96.5" y1="37" x2="35" y2="37" width="0" layer="20"/>
+<wire x1="35" y1="37" x2="33" y2="35" width="0" layer="20" curve="90"/>
 </plain>
 <libraries>
 <library name="connectors">
@@ -636,8 +640,8 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="MOUSER" value="512-LM2901N" x="70" y="19.5" size="2" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="66.5" y="9.34" size="0.8128" layer="25" ratio="15" align="bottom-center"/>
 </element>
-<element name="VT1" library="transistors-pnp" package="TO92" value="BC556" x="36" y="4" smashed="yes">
-<attribute name="NAME" x="40.5" y="2.405" size="0.8128" layer="25" ratio="15" align="bottom-center"/>
+<element name="VT1" library="transistors-pnp" package="TO92" value="BC556" x="36" y="4.5" smashed="yes">
+<attribute name="NAME" x="40.5" y="2.905" size="0.8128" layer="25" ratio="15" align="bottom-center"/>
 </element>
 <element name="R18" library="resistors" package="R-0207/10" value="15k" x="39.5" y="8.5" rot="R180"/>
 <element name="R20" library="resistors" package="R-0207/10" value="180R" x="34.5" y="30" rot="R90"/>
@@ -964,9 +968,6 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="R18" pad="2"/>
 <contactref element="VT1" pad="2"/>
 <contactref element="R19" pad="1"/>
-<wire x1="34.42" y1="8.5" x2="34.42" y2="7.8992125" width="0.254" layer="16"/>
-<wire x1="34.42" y1="7.8992125" x2="34.71289375" y2="7.19210625" width="0.254" layer="16" curve="45"/>
-<wire x1="34.71289375" y1="7.19210625" x2="36" y2="5.905" width="0.254" layer="16"/>
 <wire x1="34.42" y1="8.5" x2="34.5" y2="8.5" width="0.254" layer="16"/>
 <wire x1="34.5" y1="8.5" x2="35.20710625" y2="9.20710625" width="0.254" layer="16"/>
 <wire x1="35.20710625" y1="9.20710625" x2="35.5" y2="9.9142125" width="0.254" layer="16" curve="45"/>
@@ -977,12 +978,15 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="34.5" y1="13.9142125" x2="34.5" y2="22.0057875" width="0.254" layer="16"/>
 <wire x1="34.5" y1="22.0057875" x2="34.79289375" y2="22.71289375" width="0.254" layer="16" curve="-45"/>
 <wire x1="34.79289375" y1="22.71289375" x2="37" y2="24.92" width="0.254" layer="16"/>
+<wire x1="34.5" y1="8.5" x2="34.5" y2="8.3192125" width="0.254" layer="16"/>
+<wire x1="34.5" y1="8.3192125" x2="34.79289375" y2="7.61210625" width="0.254" layer="16" curve="45"/>
+<wire x1="34.79289375" y1="7.61210625" x2="36" y2="6.405" width="0.254" layer="16"/>
 </signal>
 <signal name="N$10">
 <contactref element="VT1" pad="3"/>
 <contactref element="R20" pad="1"/>
 <contactref element="C8" pad="1"/>
-<wire x1="37.27" y1="4" x2="37.27" y2="8.2757875" width="0.254" layer="1"/>
+<wire x1="37.27" y1="4.5" x2="37.27" y2="8.2757875" width="0.254" layer="1"/>
 <wire x1="37.27" y1="8.2757875" x2="36.97710625" y2="8.98289375" width="0.254" layer="1" curve="45"/>
 <wire x1="36.97710625" y1="8.98289375" x2="34.46" y2="11.5" width="0.254" layer="1"/>
 <wire x1="34.46" y1="11.5" x2="34.46" y2="11.54" width="0.254" layer="16"/>
@@ -1146,17 +1150,14 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="HL2" pad="A"/>
 <contactref element="VT1" pad="1"/>
 <contactref element="DA3" pad="14"/>
-<wire x1="34.73" y1="4" x2="34.75" y2="4" width="0.254" layer="16"/>
-<wire x1="34.75" y1="4" x2="35.20710625" y2="4.45710625" width="0.254" layer="16"/>
-<wire x1="35.20710625" y1="4.45710625" x2="35.9142125" y2="4.75" width="0.254" layer="16" curve="-45"/>
-<wire x1="35.9142125" y1="4.75" x2="36.0857875" y2="4.75" width="0.254" layer="16"/>
-<wire x1="36.0857875" y1="4.75" x2="36.79289375" y2="5.04289375" width="0.254" layer="16" curve="45"/>
-<wire x1="36.79289375" y1="5.04289375" x2="37.45710625" y2="5.70710625" width="0.254" layer="16"/>
-<wire x1="37.45710625" y1="5.70710625" x2="38.1642125" y2="6" width="0.254" layer="16" curve="-45"/>
-<wire x1="38.1642125" y1="6" x2="39.23" y2="6" width="0.254" layer="16"/>
 <wire x1="42.19" y1="11.88" x2="42.19" y2="9.3742125" width="0.254" layer="16"/>
 <wire x1="42.19" y1="9.3742125" x2="41.89710625" y2="8.66710625" width="0.254" layer="16" curve="-45"/>
 <wire x1="41.89710625" y1="8.66710625" x2="39.23" y2="6" width="0.254" layer="16"/>
+<wire x1="34.73" y1="4.5" x2="34.73" y2="4" width="0.254" layer="16"/>
+<wire x1="34.73" y1="4" x2="35.73" y2="3" width="0.254" layer="16" curve="90"/>
+<wire x1="39.23" y1="6" x2="39.23" y2="4" width="0.254" layer="16"/>
+<wire x1="39.23" y1="4" x2="38.23" y2="3" width="0.254" layer="16" curve="-90"/>
+<wire x1="38.23" y1="3" x2="35.73" y2="3" width="0.254" layer="16"/>
 </signal>
 <signal name="N$26">
 <contactref element="DA2" pad="5"/>
