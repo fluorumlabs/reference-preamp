@@ -2068,9 +2068,6 @@ grid 5 mm, outline 7.5 x 7.5 mm</description>
 <part name="GND6" library="supply" deviceset="GND" device=""/>
 <part name="PWR5" library="supply" deviceset="+15V" device=""/>
 <part name="GND5" library="supply" deviceset="GND" device=""/>
-<part name="R1" library="resistors" deviceset="R" device="-0207/10" value="1.5k"/>
-<part name="HL1" library="optoelectronics" deviceset="?(3MM)" device="BLUE"/>
-<part name="GND3" library="supply" deviceset="GND" device=""/>
 <part name="C6" library="capacitors" deviceset="C" device="-050-024X44" value="100n"/>
 <part name="C5" library="capacitors" deviceset="C" device="-050-024X44" value="100n"/>
 <part name="C4" library="capacitors" deviceset="C" device="-050-024X44" value="100n"/>
@@ -2152,9 +2149,6 @@ grid 5 mm, outline 7.5 x 7.5 mm</description>
 <instance part="DA1" gate=".2" x="109.22" y="20.32" rot="MR180"/>
 <instance part="GND5" gate="VR1" x="96.52" y="12.7"/>
 <instance part="DA1" gate="*" x="71.12" y="96.52"/>
-<instance part="R1" gate="G$1" x="78.74" y="38.1" rot="R90"/>
-<instance part="HL1" gate="G$1" x="78.74" y="27.94" rot="R270"/>
-<instance part="GND3" gate="VR1" x="78.74" y="20.32"/>
 <instance part="C6" gate="G$1" x="60.96" y="96.52" rot="R90"/>
 <instance part="C5" gate="G$1" x="53.34" y="96.52" rot="R90"/>
 <instance part="C4" gate="G$1" x="45.72" y="96.52" rot="R90"/>
@@ -2322,11 +2316,6 @@ grid 5 mm, outline 7.5 x 7.5 mm</description>
 <wire x1="96.52" y1="17.78" x2="96.52" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="HL1" gate="G$1" pin="C"/>
-<pinref part="GND3" gate="VR1" pin="GND"/>
-<wire x1="78.74" y1="25.4" x2="78.74" y2="22.86" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="GND1" gate="VR1" pin="GND"/>
 <wire x1="22.86" y1="93.98" x2="22.86" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="96.52" x2="30.48" y2="96.52" width="0.1524" layer="91"/>
@@ -2335,14 +2324,6 @@ grid 5 mm, outline 7.5 x 7.5 mm</description>
 <pinref part="C2" gate="G$1" pin="+"/>
 <wire x1="30.48" y1="93.98" x2="30.48" y2="96.52" width="0.1524" layer="91"/>
 <junction x="30.48" y="96.52"/>
-</segment>
-</net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="XP1" gate="G$1" pin="5"/>
-<wire x1="71.12" y1="45.72" x2="78.74" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="78.74" y1="45.72" x2="78.74" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -2743,13 +2724,6 @@ grid 5 mm, outline 7.5 x 7.5 mm</description>
 <wire x1="121.92" y1="27.94" x2="121.92" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="DA1" gate=".2" pin="OUT"/>
 <wire x1="121.92" y1="20.32" x2="119.38" y2="20.32" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="R1" gate="G$1" pin="1"/>
-<pinref part="HL1" gate="G$1" pin="A"/>
-<wire x1="78.74" y1="33.02" x2="78.74" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
