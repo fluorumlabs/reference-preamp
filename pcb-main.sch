@@ -2622,9 +2622,9 @@ grid 5 mm, outline 7.5 x 7.5 mm</description>
 <device name="" package="2TED1T1A1M7RES">
 <connects>
 <connect gate=".1" pin="1" pad="NC1"/>
-<connect gate=".1" pin="2" pad="NC2"/>
+<connect gate=".1" pin="2" pad="NO1"/>
 <connect gate=".1" pin="CM" pad="C1"/>
-<connect gate=".2" pin="1" pad="NO1"/>
+<connect gate=".2" pin="1" pad="NC2"/>
 <connect gate=".2" pin="2" pad="NO2"/>
 <connect gate=".2" pin="CM" pad="C2"/>
 </connects>
@@ -3021,7 +3021,7 @@ diameter 9 mm, horizontal, grid 15.24 mm</description>
 <wire x1="5.08" y1="13.335" x2="5.08" y2="-13.335" width="0" layer="20"/>
 <wire x1="5.08" y1="-13.335" x2="-5.08" y2="-13.335" width="0" layer="20"/>
 <wire x1="-5.08" y1="-13.335" x2="-5.08" y2="13.335" width="0" layer="20"/>
-<pad name="P$1" x="0" y="7" drill="3.2"/>
+<pad name="P$1" x="0" y="5.5" drill="3.2"/>
 </package>
 </packages>
 <symbols>
@@ -3432,7 +3432,6 @@ diameter 9 mm, horizontal, grid 15.24 mm</description>
 <part name="DA6" library="ic-analog-devices" deviceset="OP275" device="P"/>
 <part name="SA2" library="switches" deviceset="2TED1T1A1M7RES" device=""/>
 <part name="PWR18" library="supply" deviceset="+48V" device=""/>
-<part name="PWR11" library="supply" deviceset="+15V" device=""/>
 <part name="PWR19" library="supply" deviceset="+15V" device=""/>
 <part name="PWR20" library="supply" deviceset="-15V" device=""/>
 <part name="GND28" library="supply" deviceset="GND" device=""/>
@@ -3570,7 +3569,6 @@ diameter 9 mm, horizontal, grid 15.24 mm</description>
 <instance part="SA2" gate=".1" x="48.26" y="-55.88"/>
 <instance part="DA6" gate="*" x="243.84" y="15.24"/>
 <instance part="PWR18" gate="G$1" x="-63.5" y="-33.02" rot="R90"/>
-<instance part="PWR11" gate="G$1" x="-63.5" y="-20.32" rot="R90"/>
 <instance part="PWR19" gate="G$1" x="238.76" y="-33.02" rot="R90"/>
 <instance part="PWR20" gate="G$1" x="238.76" y="-35.56" rot="R90"/>
 <instance part="GND28" gate="VR1" x="238.76" y="-50.8" rot="MR0"/>
@@ -4120,11 +4118,6 @@ diameter 9 mm, horizontal, grid 15.24 mm</description>
 </net>
 <net name="+15V" class="0">
 <segment>
-<pinref part="SA1" gate=".2" pin="CM"/>
-<wire x1="-63.5" y1="-20.32" x2="-60.96" y2="-20.32" width="0.1524" layer="91"/>
-<pinref part="PWR11" gate="G$1" pin="+15V"/>
-</segment>
-<segment>
 <pinref part="PWR19" gate="G$1" pin="+15V"/>
 <pinref part="XP2" gate="G$1" pin="1"/>
 <wire x1="238.76" y1="-33.02" x2="241.3" y2="-33.02" width="0.1524" layer="91"/>
@@ -4336,15 +4329,6 @@ diameter 9 mm, horizontal, grid 15.24 mm</description>
 <junction x="66.04" y="73.66"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="60.96" y1="73.66" x2="66.04" y2="73.66" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$42" class="0">
-<segment>
-<wire x1="241.3" y1="-43.18" x2="-7.62" y2="-43.18" width="0.1524" layer="91"/>
-<wire x1="-7.62" y1="-43.18" x2="-7.62" y2="-25.4" width="0.1524" layer="91"/>
-<pinref part="SA1" gate=".2" pin="2"/>
-<wire x1="-7.62" y1="-25.4" x2="-45.72" y2="-25.4" width="0.1524" layer="91"/>
-<pinref part="XP2" gate="G$1" pin="5"/>
 </segment>
 </net>
 <net name="N$33" class="0">
