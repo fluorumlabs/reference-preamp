@@ -247,6 +247,25 @@
 </library>
 <library name="module-footprints">
 <packages>
+<package name="F-DIP8-HEATSINK-NOSILK">
+<pad name="1" x="-3.81" y="-12.065" drill="0.9144" shape="square"/>
+<pad name="2" x="-1.27" y="-12.065" drill="0.9144"/>
+<pad name="3" x="1.27" y="-12.065" drill="0.9144"/>
+<pad name="4" x="3.81" y="-12.065" drill="0.9144"/>
+<pad name="8" x="-3.81" y="12.065" drill="0.9144"/>
+<pad name="7" x="-1.27" y="12.065" drill="0.9144"/>
+<pad name="6" x="1.27" y="12.065" drill="0.9144"/>
+<pad name="5" x="3.81" y="12.065" drill="0.9144"/>
+<rectangle x1="-5.08" y1="-11.1125" x2="-2.54" y2="-10.795" layer="21"/>
+<rectangle x1="-2.8575" y1="-13.335" x2="-2.54" y2="-10.795" layer="21"/>
+<rectangle x1="-5.08" y1="-13.335" x2="-4.7625" y2="-10.795" layer="21"/>
+<rectangle x1="-5.08" y1="-13.335" x2="-2.54" y2="-13.0175" layer="21"/>
+<wire x1="-5.08" y1="13.335" x2="5.08" y2="13.335" width="0" layer="20"/>
+<wire x1="5.08" y1="13.335" x2="5.08" y2="-13.335" width="0" layer="20"/>
+<wire x1="5.08" y1="-13.335" x2="-5.08" y2="-13.335" width="0" layer="20"/>
+<wire x1="-5.08" y1="-13.335" x2="-5.08" y2="13.335" width="0" layer="20"/>
+<pad name="P$1" x="0" y="5.5" drill="3.2"/>
+</package>
 <package name="F-DIP8-HEATSINK">
 <pad name="1" x="-3.81" y="-12.065" drill="0.9144" shape="square"/>
 <pad name="2" x="-1.27" y="-12.065" drill="0.9144"/>
@@ -273,26 +292,6 @@
 <wire x1="7.62" y1="-10.16" x2="5.08" y2="-10.16" width="0.127" layer="21"/>
 <wire x1="7.62" y1="10.16" x2="5.08" y2="10.16" width="0.127" layer="21"/>
 <wire x1="-7.62" y1="10.16" x2="-5.08" y2="10.16" width="0.127" layer="21"/>
-<pad name="P$1" x="0" y="7" drill="3.2"/>
-</package>
-<package name="F-DIP8-HEATSINK-NOSILK">
-<pad name="1" x="-3.81" y="-12.065" drill="0.9144" shape="square"/>
-<pad name="2" x="-1.27" y="-12.065" drill="0.9144"/>
-<pad name="3" x="1.27" y="-12.065" drill="0.9144"/>
-<pad name="4" x="3.81" y="-12.065" drill="0.9144"/>
-<pad name="8" x="-3.81" y="12.065" drill="0.9144"/>
-<pad name="7" x="-1.27" y="12.065" drill="0.9144"/>
-<pad name="6" x="1.27" y="12.065" drill="0.9144"/>
-<pad name="5" x="3.81" y="12.065" drill="0.9144"/>
-<rectangle x1="-5.08" y1="-11.1125" x2="-2.54" y2="-10.795" layer="21"/>
-<rectangle x1="-2.8575" y1="-13.335" x2="-2.54" y2="-10.795" layer="21"/>
-<rectangle x1="-5.08" y1="-13.335" x2="-4.7625" y2="-10.795" layer="21"/>
-<rectangle x1="-5.08" y1="-13.335" x2="-2.54" y2="-13.0175" layer="21"/>
-<wire x1="-5.08" y1="13.335" x2="5.08" y2="13.335" width="0" layer="20"/>
-<wire x1="5.08" y1="13.335" x2="5.08" y2="-13.335" width="0" layer="20"/>
-<wire x1="5.08" y1="-13.335" x2="-5.08" y2="-13.335" width="0" layer="20"/>
-<wire x1="-5.08" y1="-13.335" x2="-5.08" y2="13.335" width="0" layer="20"/>
-<pad name="P$1" x="0" y="7" drill="3.2"/>
 </package>
 </packages>
 <symbols>
@@ -329,7 +328,7 @@
 <devices>
 <device name="" package="F-DIP8-HEATSINK">
 <connects>
-<connect gate="G$1" pin="GND" pad="6 7 P$1"/>
+<connect gate="G$1" pin="GND" pad="6 7"/>
 <connect gate="G$1" pin="GND1" pad="2 3"/>
 <connect gate="G$1" pin="P+12V" pad="8"/>
 <connect gate="G$1" pin="P+VA" pad="1"/>
