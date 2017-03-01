@@ -49,6 +49,7 @@
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
@@ -58,6 +59,7 @@
 <layer number="96" name="Values" color="7" fill="1" visible="no" active="no"/>
 <layer number="97" name="Info" color="7" fill="1" visible="no" active="no"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
+<layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
 <layer number="100" name="AnalogFill" color="16" fill="1" visible="yes" active="yes"/>
 <layer number="101" name="Patch_Top" color="12" fill="4" visible="no" active="yes"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="no" active="yes"/>
@@ -71,7 +73,9 @@
 <layer number="110" name="fp0" color="7" fill="1" visible="no" active="yes"/>
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="113" name="ReferenceLS" color="7" fill="1" visible="no" active="no"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
+<layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
@@ -83,8 +87,12 @@
 <layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="153" name="FabDoc1" color="6" fill="1" visible="no" active="no"/>
+<layer number="154" name="FabDoc2" color="2" fill="1" visible="no" active="no"/>
+<layer number="155" name="FabDoc3" color="7" fill="15" visible="no" active="no"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="no" active="yes"/>
@@ -111,6 +119,9 @@
 <layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="231" name="Eagle3D_PG1" color="7" fill="1" visible="no" active="no"/>
+<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="no" active="no"/>
+<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="no" active="no"/>
 <layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
@@ -210,6 +221,13 @@
 <vertex x="-1.27" y="-2.54"/>
 <vertex x="-0.635" y="-2.54"/>
 </polygon>
+</package>
+</packages>
+</library>
+<library name="module-footprints">
+<packages>
+<package name="F-LOGO">
+<text x="0" y="0" size="0.8128" layer="21" ratio="15" rot="R180" align="center">&gt;VALUE</text>
 </package>
 </packages>
 </library>
@@ -398,16 +416,16 @@ Please make sure your boards conform to these design rules.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="R1" library="resistors" package="R-0805" value="6.65k" x="2.3" y="10.75" smashed="yes" rot="R180">
+<element name="R1" library="resistors" package="R-0805" value="6K65" x="2.3" y="10.75" smashed="yes" rot="R180">
 <attribute name="NAME" x="5.2" y="11.405" size="0.8128" layer="25" ratio="15" align="center"/>
 </element>
-<element name="R10" library="resistors" package="R-0805" value="4.99R" x="18.75" y="7.25" smashed="yes" rot="R90">
+<element name="R10" library="resistors" package="R-0805" value="4R99" x="18.75" y="7.25" smashed="yes" rot="R90">
 <attribute name="NAME" x="18.75" y="4.655" size="0.8128" layer="25" ratio="15" align="center"/>
 </element>
-<element name="R11" library="resistors" package="R-0805" value="4.99R" x="1.75" y="7.25" smashed="yes" rot="R90">
+<element name="R11" library="resistors" package="R-0805" value="4R99" x="1.75" y="7.25" smashed="yes" rot="R90">
 <attribute name="NAME" x="1.75" y="4.655" size="0.8128" layer="25" ratio="15" align="center"/>
 </element>
-<element name="R2" library="resistors" package="R-0805" value="1.91k" x="1.75" y="14.25" smashed="yes" rot="R90">
+<element name="R2" library="resistors" package="R-0805" value="1K91" x="1.75" y="14.25" smashed="yes" rot="R90">
 <attribute name="NAME" x="3.75" y="12.845" size="0.8128" layer="25" ratio="15" rot="R180" align="center"/>
 </element>
 <element name="R3" library="resistors" package="R-0805" value="768R" x="4.25" y="15.75" smashed="yes" rot="R90">
@@ -419,21 +437,24 @@ Please make sure your boards conform to these design rules.</description>
 <element name="R5" library="resistors" package="R-0805" value="165R" x="10.25" y="15.75" smashed="yes" rot="R90">
 <attribute name="NAME" x="10.25" y="13.405" size="0.8128" layer="25" ratio="15" align="center"/>
 </element>
-<element name="R6" library="resistors" package="R-0805" value="80.6R" x="13.25" y="15.75" smashed="yes" rot="R90">
+<element name="R6" library="resistors" package="R-0805" value="80R6" x="13.25" y="15.75" smashed="yes" rot="R90">
 <attribute name="NAME" x="13.25" y="13.095" size="0.8128" layer="25" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="R7" library="resistors" package="R-0805" value="40.2R" x="16.25" y="15.75" smashed="yes" rot="R90">
+<element name="R7" library="resistors" package="R-0805" value="40R2" x="16.25" y="15.75" smashed="yes" rot="R90">
 <attribute name="NAME" x="18.25" y="17.345" size="0.8128" layer="25" ratio="15" rot="R180" align="center"/>
 </element>
 <element name="R8" library="resistors" package="R-0805" value="20R" x="18.75" y="14.25" smashed="yes" rot="R90">
 <attribute name="NAME" x="17" y="12.905" size="0.8128" layer="25" ratio="15" align="center"/>
+<attribute name="MOUSER" value="660-RK73H2ATTD20R0F" x="18.75" y="14.25" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R9" library="resistors" package="R-0805" value="10R" x="18.2" y="10.75" smashed="yes">
 <attribute name="NAME" x="15.55" y="11.345" size="0.8128" layer="25" ratio="15" rot="R180" align="center"/>
+<attribute name="MOUSER" value="660-RK73H2ATTD10R0F" x="18.2" y="10.75" size="1.778" layer="27" display="off"/>
 </element>
 <element name="S1" library="switches" package="56DP30-01-1" value="56DP30-01-1-AJ" x="10.25" y="6.5"/>
 <element name="XP2" library="connectors" package="ML2" value="" x="2.5" y="1.25" smashed="yes" rot="R90"/>
 <element name="XP1" library="connectors" package="ML2" value="" x="18" y="1.25" smashed="yes" rot="R90"/>
+<element name="PCB1" library="module-footprints" package="F-LOGO" value="56DP30 GAIN rev.A" x="10.25" y="17.25" rot="MR0"/>
 </elements>
 <signals>
 <signal name="N$1">
