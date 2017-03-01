@@ -1707,7 +1707,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="U3" library="module-footprints" package="F56DP" value="56DP30-GAIN" x="50" y="0"/>
 <element name="U1" library="regulators-switch-mode" package="SIP7" value="IH1224DH" x="44" y="77"/>
 <element name="U2" library="regulators-switch-mode" package="SIP8" value="RS3-1215D" x="24" y="67.5" rot="R270"/>
-<element name="U4" library="module-footprints" package="F-DIP8-HEATSINK" value="" x="44" y="61" rot="R270"/>
+<element name="U4" library="module-footprints" package="F-DIP8-HEATSINK" value="F-LT3032-12" x="44" y="61" rot="R270"/>
 <element name="L1" library="inductors" package="BL01RN1A" value="BL01RN1A1F1J" x="6" y="58" rot="R90">
 <attribute name="MOUSER" value="81-BL01RN1A1F1J" x="6" y="58" size="1.778" layer="27" rot="R90" display="off"/>
 </element>

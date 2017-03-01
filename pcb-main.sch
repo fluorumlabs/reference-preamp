@@ -5367,7 +5367,7 @@ diameter 9 mm, horizontal, grid 15.24 mm</description>
 <part name="PWR1" library="supply" deviceset="+48V" device=""/>
 <part name="PWR2" library="supply" deviceset="+15V" device=""/>
 <part name="PWR3" library="supply" deviceset="-15V" device=""/>
-<part name="U4" library="module-footprints" deviceset="F-DUAL-SUPPLY" device=""/>
+<part name="U4" library="module-footprints" deviceset="F-DUAL-SUPPLY" device="" value="F-LT3032-12"/>
 <part name="PWR4" library="supply" deviceset="+15V" device=""/>
 <part name="PWR5" library="supply" deviceset="-15V" device=""/>
 <part name="PWR7" library="supply" deviceset="+12V" device=""/>
