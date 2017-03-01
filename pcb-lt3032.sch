@@ -293,6 +293,11 @@
 <wire x1="7.62" y1="10.16" x2="5.08" y2="10.16" width="0.127" layer="21"/>
 <wire x1="-7.62" y1="10.16" x2="-5.08" y2="10.16" width="0.127" layer="21"/>
 </package>
+<package name="EMPTY">
+</package>
+<package name="F-LOGO">
+<text x="0" y="0" size="0.8128" layer="21" ratio="15" rot="R180" align="center">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="F-DUAL-SUPPLY">
@@ -318,6 +323,13 @@
 <text x="-11.176" y="-10.16" size="1.6764" layer="95" rot="R180" align="center-right">-VA</text>
 <text x="0" y="15.24" size="1.27" layer="94" rot="R180" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-15.24" size="1.27" layer="96" align="bottom-center">&gt;VALUE</text>
+</symbol>
+<symbol name="VERSION">
+<text x="0" y="0" size="2.1844" layer="94" ratio="15" align="center">&gt;VALUE</text>
+<wire x1="-20.32" y1="2.54" x2="20.32" y2="2.54" width="1.016" layer="94"/>
+<wire x1="20.32" y1="2.54" x2="20.32" y2="-2.54" width="1.016" layer="94"/>
+<wire x1="20.32" y1="-2.54" x2="-20.32" y2="-2.54" width="1.016" layer="94"/>
+<wire x1="-20.32" y1="-2.54" x2="-20.32" y2="2.54" width="1.016" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -348,6 +360,23 @@
 <connect gate="G$1" pin="P-12V" pad="5"/>
 <connect gate="G$1" pin="P-VA" pad="4"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GENERIC" prefix="PCB" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="VERSION" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="EMPTY">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-LOGO" package="F-LOGO">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -521,40 +550,6 @@ grid 5 mm, outline 7.5 x 7.5 mm</description>
 <wire x1="2.5" y1="-1.1" x2="2.5" y2="1.1" width="0.127" layer="21"/>
 <wire x1="2.5" y1="1.1" x2="1" y2="1.1" width="0.127" layer="21"/>
 </package>
-<package name="C1210">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
-<wire x1="-0.9652" y1="1.2446" x2="0.9652" y2="1.2446" width="0.1016" layer="51"/>
-<wire x1="-0.9652" y1="-1.2446" x2="0.9652" y2="-1.2446" width="0.1016" layer="51"/>
-<smd name="1" x="-1.4" y="0" dx="1.6" dy="2.7" layer="1"/>
-<smd name="2" x="1.4" y="0" dx="1.6" dy="2.7" layer="1"/>
-<text x="0" y="1.5" size="0.8128" layer="25" ratio="13" align="bottom-center">&gt;NAME</text>
-<rectangle x1="-1.7018" y1="-1.2954" x2="-0.9517" y2="1.3045" layer="51"/>
-<rectangle x1="0.9517" y1="-1.3045" x2="1.7018" y2="1.2954" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
-<wire x1="-1" y1="1.5" x2="-2.5" y2="1.5" width="0.127" layer="21"/>
-<wire x1="-2.5" y1="1.5" x2="-2.5" y2="-1.5" width="0.127" layer="21"/>
-<wire x1="-2.5" y1="-1.5" x2="-1" y2="-1.5" width="0.127" layer="21"/>
-<wire x1="1" y1="-1.5" x2="2.5" y2="-1.5" width="0.127" layer="21"/>
-<wire x1="2.5" y1="-1.5" x2="2.5" y2="1.5" width="0.127" layer="21"/>
-<wire x1="2.5" y1="1.5" x2="1" y2="1.5" width="0.127" layer="21"/>
-</package>
-<package name="R-0603">
-<description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
-<wire x1="-0.432" y1="-0.356" x2="0.432" y2="-0.356" width="0.1524" layer="51"/>
-<wire x1="0.432" y1="0.356" x2="-0.432" y2="0.356" width="0.1524" layer="51"/>
-<smd name="1" x="-0.85" y="0" dx="1" dy="1.1" layer="1"/>
-<smd name="2" x="0.85" y="0" dx="1" dy="1.1" layer="1"/>
-<text x="0" y="1.905" size="0.8128" layer="25" ratio="14" rot="R180" align="bottom-center">&gt;NAME</text>
-<rectangle x1="0.4318" y1="-0.4318" x2="0.8382" y2="0.4318" layer="51"/>
-<rectangle x1="-0.8382" y1="-0.4318" x2="-0.4318" y2="0.4318" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
-<wire x1="-0.635" y1="0.79375" x2="-1.5875" y2="0.79375" width="0.127" layer="21"/>
-<wire x1="-1.5875" y1="0.79375" x2="-1.5875" y2="-0.79375" width="0.127" layer="21"/>
-<wire x1="-1.5875" y1="-0.79375" x2="-0.635" y2="-0.79375" width="0.127" layer="21"/>
-<wire x1="0.635" y1="-0.79375" x2="1.5875" y2="-0.79375" width="0.127" layer="21"/>
-<wire x1="1.5875" y1="-0.79375" x2="1.5875" y2="0.79375" width="0.127" layer="21"/>
-<wire x1="1.5875" y1="0.79375" x2="0.635" y2="0.79375" width="0.127" layer="21"/>
-</package>
 </packages>
 <symbols>
 <symbol name="C">
@@ -569,12 +564,199 @@ grid 5 mm, outline 7.5 x 7.5 mm</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="C" prefix="C" uservalue="yes">
+<deviceset name="?" prefix="C">
 <gates>
 <gate name="G$1" symbol="C" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-0805" package="C-0805">
+<device name="15P" package="C-0805">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MOUSER" value="77-VJ0805A150GXAPBC" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="22P" package="C-0805">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MOUSER" value="77-VJ0805A220GXACBC" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="47N" package="C-0805">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MOUSER" value="77-VJ0805Y473JXAPBC" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="100N" package="C-0805">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MOUSER" value="77-VJ0805V104MXBPBC" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="1U" package="C-0805">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MOUSER" value="77-VJ0805V105ZXXTBC" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="100N(TH)" package="C050-024X044">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MOUSER" value="81-RCER71H104K0A2H3B" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="100P(FILM)" package="C050-045X075">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MOUSER" value="80-PFR5101J100J11L4" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="2N2(FILM)" package="C050-025X075">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MOUSER" value="80-PHE426DJ4220JR05" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="3N3(FILM)" package="C050-025X075">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MOUSER" value="505-FKS23300/100/10" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="10N(FILM)" package="C050-025X075">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MOUSER" value="80-F622JF103J100C" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="22N(FILM)" package="C050-025X075">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MOUSER" value="80-R82EC2220DQ50J" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="33N(FILM)" package="C050-025X075">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MOUSER" value="594-2222-370-86333" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="47N(FILM)" package="C050-025X075">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MOUSER" value="871-B32529C1473J" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="100N(FILM)" package="C050-025X075">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MOUSER" value="505-MKS2.1/63/5" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="220N(FILM)" package="C050-025X075">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MOUSER" value="80-R82DC3220AA60J" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="330N(FILM)" package="C050-035X075">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MOUSER" value="505-MKS2.33/63/10" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="2U2(FILM)" package="C050-075X075">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MOUSER" value="80-MMK5225K63J06L4" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="22P(TH)" package="C050-024X044">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -583,7 +765,18 @@ grid 5 mm, outline 7.5 x 7.5 mm</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="-050-024X44" package="C050-024X044">
+<device name="27P" package="C-0805">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MOUSER" value="77-VJ0805A270GXACBC" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="1N(FILM)" package="C050-025X075">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -592,7 +785,7 @@ grid 5 mm, outline 7.5 x 7.5 mm</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="-050-025X075" package="C050-025X075">
+<device name="470P(FILM)" package="C050-055X075">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -601,7 +794,7 @@ grid 5 mm, outline 7.5 x 7.5 mm</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="-050-035X075" package="C050-035X075">
+<device name="68N(FILM)" package="C050-025X075">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -610,7 +803,7 @@ grid 5 mm, outline 7.5 x 7.5 mm</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="-050-045X075" package="C050-045X075">
+<device name="4N7(FILM)" package="C050-025X075">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -619,7 +812,7 @@ grid 5 mm, outline 7.5 x 7.5 mm</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="-050-055X075" package="C050-055X075">
+<device name="10U" package="C-1206">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -628,34 +821,7 @@ grid 5 mm, outline 7.5 x 7.5 mm</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="-050-075X075" package="C050-075X075">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-1206" package="C-1206">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-1210" package="C1210">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-0603" package="R-0603">
+<device name="10N" package="C-0805">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -706,14 +872,15 @@ grid 5 mm, outline 7.5 x 7.5 mm</description>
 <parts>
 <part name="DA1" library="regulators-linear" deviceset="LT3032" device="-12"/>
 <part name="U1" library="module-footprints" deviceset="F-DUAL-SUPPLY" device="-BOARD"/>
-<part name="C1" library="capacitors" deviceset="C" device="-1206" value="10u"/>
-<part name="C2" library="capacitors" deviceset="C" device="-1206" value="10u"/>
-<part name="C6" library="capacitors" deviceset="C" device="-1206" value="10u"/>
-<part name="C5" library="capacitors" deviceset="C" device="-1206" value="10u"/>
-<part name="C3" library="capacitors" deviceset="C" device="-0805" value="10n"/>
-<part name="C4" library="capacitors" deviceset="C" device="-0805" value="10n"/>
+<part name="C1" library="capacitors" deviceset="?" device="10U" value="10U"/>
+<part name="C2" library="capacitors" deviceset="?" device="10U" value="10U"/>
+<part name="C6" library="capacitors" deviceset="?" device="10U" value="10U"/>
+<part name="C5" library="capacitors" deviceset="?" device="10U" value="10U"/>
+<part name="C3" library="capacitors" deviceset="?" device="10N" value="10N"/>
+<part name="C4" library="capacitors" deviceset="?" device="10N" value="10N"/>
 <part name="GND1" library="supply" deviceset="GND" device=""/>
 <part name="GND2" library="supply" deviceset="GND" device=""/>
+<part name="PCB1" library="module-footprints" deviceset="GENERIC" device="-LOGO" value="LT3032 rev.A"/>
 </parts>
 <sheets>
 <sheet>
@@ -731,6 +898,7 @@ grid 5 mm, outline 7.5 x 7.5 mm</description>
 <instance part="C4" gate="G$1" x="30.48" y="-48.26"/>
 <instance part="GND1" gate="VR1" x="-43.18" y="-35.56"/>
 <instance part="GND2" gate="VR1" x="48.26" y="-35.56"/>
+<instance part="PCB1" gate="G$1" x="-20.32" y="5.08"/>
 </instances>
 <busses>
 </busses>
