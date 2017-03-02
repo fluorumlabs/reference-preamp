@@ -947,7 +947,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="712RA" prefix="XS">
+<deviceset name="722RA" prefix="XS">
 <gates>
 <gate name="G$1" symbol="POWER-JACK-SWITCHED" x="0" y="0"/>
 </gates>
@@ -5270,7 +5270,7 @@ diameter 9 mm, horizontal, grid 15.24 mm</description>
 </class>
 </classes>
 <parts>
-<part name="XS4" library="connectors" deviceset="712RA" device=""/>
+<part name="XS4" library="connectors" deviceset="722RA" device=""/>
 <part name="XS1" library="connectors" deviceset="NCJ6FAH-0" device=""/>
 <part name="C10" library="capacitors" deviceset="?" device="47P(TH)" value="47P(TH)"/>
 <part name="C11" library="capacitors" deviceset="?" device="470P(FILM)" value="470P(FILM)"/>

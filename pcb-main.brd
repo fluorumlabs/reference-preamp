@@ -1602,7 +1602,7 @@ Please make sure your boards conform to these design rules.</description>
 </autorouter>
 <elements>
 <element name="E$1" library="enclosure" package="B*-080" value="" x="0" y="0"/>
-<element name="XS4" library="connectors" package="SWITCHCRAFT-L712RA" value="712RA" x="10" y="80" rot="R270">
+<element name="XS4" library="connectors" package="SWITCHCRAFT-L712RA" value="722RA" x="10" y="80" rot="R270">
 <attribute name="MOUSER" value="502-722RA" x="10" y="80" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="XS1" library="connectors" package="NCJ6FA-H-0" value="NCJ6FAH-0" x="20" y="0" rot="R180"/>
