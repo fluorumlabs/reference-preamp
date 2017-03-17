@@ -132,11 +132,11 @@
 <plain>
 <wire x1="33" y1="35" x2="33" y2="4" width="0" layer="20"/>
 <wire x1="33" y1="4" x2="35" y2="2" width="0" layer="20" curve="90"/>
-<wire x1="35" y1="2" x2="96.5" y2="2" width="0" layer="20"/>
-<wire x1="96.5" y1="2" x2="98.5" y2="4" width="0" layer="20" curve="90"/>
-<wire x1="98.5" y1="4" x2="98.5" y2="35" width="0" layer="20"/>
-<wire x1="98.5" y1="35" x2="96.5" y2="37" width="0" layer="20" curve="90"/>
-<wire x1="96.5" y1="37" x2="35" y2="37" width="0" layer="20"/>
+<wire x1="35" y1="2" x2="96" y2="2" width="0" layer="20"/>
+<wire x1="96" y1="2" x2="98" y2="4" width="0" layer="20" curve="90"/>
+<wire x1="98" y1="4" x2="98" y2="35" width="0" layer="20"/>
+<wire x1="98" y1="35" x2="96" y2="37" width="0" layer="20" curve="90"/>
+<wire x1="96" y1="37" x2="35" y2="37" width="0" layer="20"/>
 <wire x1="35" y1="37" x2="33" y2="35" width="0" layer="20" curve="90"/>
 </plain>
 <libraries>
@@ -930,14 +930,14 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="C2" pad="+"/>
 <polygon width="0.254" layer="16">
 <vertex x="33" y="37"/>
-<vertex x="98.5" y="37"/>
-<vertex x="98.5" y="2"/>
+<vertex x="98" y="37"/>
+<vertex x="98" y="2"/>
 <vertex x="33" y="2"/>
 </polygon>
 <polygon width="0.254" layer="1">
 <vertex x="33" y="37"/>
-<vertex x="98.5" y="37"/>
-<vertex x="98.5" y="2"/>
+<vertex x="98" y="37"/>
+<vertex x="98" y="2"/>
 <vertex x="33" y="2"/>
 </polygon>
 </signal>
