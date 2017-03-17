@@ -2400,6 +2400,24 @@ type 0207, grid 10 mm</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="100K*(TH)" package="R-0207/10">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="22R(TH)" package="R-0207/10">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 </devicesets>
@@ -5322,8 +5340,8 @@ diameter 9 mm, horizontal, grid 15.24 mm</description>
 <part name="C26" library="capacitors" deviceset="?" device="100N(TH)" value="100N(TH)"/>
 <part name="C27" library="capacitors-electrolytic" deviceset="?" device="47U/35V" value="47U/35V"/>
 <part name="C28" library="capacitors-electrolytic" deviceset="?" device="47U/35V" value="47U/35V"/>
-<part name="R8" library="resistors" deviceset="?" device="20R(TH)" value="20R(TH)"/>
-<part name="R19" library="resistors" deviceset="?" device="20R(TH)" value="20R(TH)"/>
+<part name="R8" library="resistors" deviceset="?" device="22R(TH)" value="22R(TH)"/>
+<part name="R19" library="resistors" deviceset="?" device="22R(TH)" value="22R(TH)"/>
 <part name="PWR12" library="supply" deviceset="+12V" device=""/>
 <part name="PWR13" library="supply" deviceset="-12V" device=""/>
 <part name="GND18" library="supply" deviceset="GND" device=""/>

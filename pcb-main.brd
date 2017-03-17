@@ -1679,8 +1679,8 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="C27" library="capacitors-electrolytic" package="E2-5" value="47U/35V" x="68" y="57.5"/>
 <element name="C28" library="capacitors-electrolytic" package="E2-5" value="47U/35V" x="62.5" y="57.5" rot="R180"/>
-<element name="R8" library="resistors" package="R-0207/10" value="20R(TH)" x="59.5" y="37.5" rot="R270"/>
-<element name="R19" library="resistors" package="R-0207/10" value="20R(TH)" x="59.5" y="64.5" rot="R90"/>
+<element name="R8" library="resistors" package="R-0207/10" value="22R(TH)" x="59.5" y="37.5" rot="R270"/>
+<element name="R19" library="resistors" package="R-0207/10" value="22R(TH)" x="59.5" y="64.5" rot="R90"/>
 <element name="C29" library="capacitors-electrolytic" package="E5-10,5" value="47U/35V(NP)" x="90" y="51" rot="R90"/>
 <element name="C30" library="capacitors-electrolytic" package="E5-10,5" value="47U/35V(NP)" x="76" y="51" rot="R180"/>
 <element name="C31" library="capacitors" package="C050-035X075" value="330N(FILM)" x="73" y="63" smashed="yes" rot="R90">
