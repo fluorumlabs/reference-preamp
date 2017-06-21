@@ -44,7 +44,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -596,12 +596,12 @@
 <text x="0" y="-25" size="0.6096" layer="25" ratio="14" align="center">&gt;NAME</text>
 </package>
 <package name="NMJ6HC-S">
-<wire x1="0" y1="9.1" x2="-20.6" y2="9.1" width="0.1016" layer="21"/>
-<wire x1="-20.6" y1="9.1" x2="-20.6" y2="4.25" width="0.1016" layer="21"/>
+<wire x1="0" y1="10" x2="-20.6" y2="10" width="0.1016" layer="21"/>
+<wire x1="-20.6" y1="10" x2="-20.6" y2="4.25" width="0.1016" layer="21"/>
 <wire x1="-20.6" y1="4.25" x2="-20.6" y2="-4.25" width="0.1016" layer="21"/>
-<wire x1="-20.6" y1="-4.25" x2="-20.6" y2="-9.1" width="0.1016" layer="21"/>
-<wire x1="-20.6" y1="-9.1" x2="0" y2="-9.1" width="0.1016" layer="21"/>
-<wire x1="0" y1="-9.1" x2="0" y2="9.1" width="0.1016" layer="21"/>
+<wire x1="-20.6" y1="-4.25" x2="-20.6" y2="-10" width="0.1016" layer="21"/>
+<wire x1="-20.6" y1="-10" x2="0" y2="-10" width="0.1016" layer="21"/>
+<wire x1="0" y1="-10" x2="0" y2="10" width="0.1016" layer="21"/>
 <wire x1="-20.6" y1="-4.25" x2="-22.965" y2="-4.25" width="0.1016" layer="21"/>
 <wire x1="-22.965" y1="-4.25" x2="-23.6" y2="-3.615" width="0.1016" layer="21"/>
 <wire x1="-23.6" y1="-3.615" x2="-23.6" y2="3.615" width="0.1016" layer="21"/>
@@ -1240,15 +1240,15 @@ grid 5 mm, outline 3.5 x 7.5 mm</description>
 <wire x1="-2.8448" y1="0.27" x2="-2.8448" y2="15.51" width="0.127" layer="21"/>
 <wire x1="-2.8448" y1="15.51" x2="2.8448" y2="15.51" width="0.127" layer="21"/>
 <wire x1="2.8448" y1="15.51" x2="2.8448" y2="0.27" width="0.127" layer="21"/>
-<wire x1="-1.9939" y1="0.27" x2="-1.9939" y2="-3.286" width="0.127" layer="21"/>
-<wire x1="-1.9939" y1="-3.286" x2="-1.27" y2="-3.286" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="-3.286" x2="1.27" y2="-3.286" width="0.127" layer="21"/>
-<wire x1="1.27" y1="-3.286" x2="1.9939" y2="-3.286" width="0.127" layer="21"/>
-<wire x1="1.9939" y1="-3.286" x2="1.9939" y2="0.27" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="-3.286" x2="-1.27" y2="-7.35" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="-7.35" x2="0" y2="-8.62" width="0.127" layer="21" curve="90"/>
-<wire x1="0" y1="-8.62" x2="1.27" y2="-7.35" width="0.127" layer="21" curve="90"/>
-<wire x1="1.27" y1="-7.35" x2="1.27" y2="-3.286" width="0.127" layer="21"/>
+<wire x1="-1.9939" y1="0.27" x2="-1.9939" y2="-3.286" width="0.127" layer="51"/>
+<wire x1="-1.9939" y1="-3.286" x2="-1.27" y2="-3.286" width="0.127" layer="51"/>
+<wire x1="-1.27" y1="-3.286" x2="1.27" y2="-3.286" width="0.127" layer="51"/>
+<wire x1="1.27" y1="-3.286" x2="1.9939" y2="-3.286" width="0.127" layer="51"/>
+<wire x1="1.9939" y1="-3.286" x2="1.9939" y2="0.27" width="0.127" layer="51"/>
+<wire x1="-1.27" y1="-3.286" x2="-1.27" y2="-7.35" width="0.127" layer="51"/>
+<wire x1="-1.27" y1="-7.35" x2="0" y2="-8.62" width="0.127" layer="51" curve="90"/>
+<wire x1="0" y1="-8.62" x2="1.27" y2="-7.35" width="0.127" layer="51" curve="90"/>
+<wire x1="1.27" y1="-7.35" x2="1.27" y2="-3.286" width="0.127" layer="51"/>
 <text x="0" y="16.145" size="0.8128" layer="21" ratio="15" align="center">&gt;NAME</text>
 </package>
 </packages>
